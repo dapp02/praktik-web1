@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <form action="/action_page.php" method="post">
+        <label for="depan">Nama dapan:</label><br>
+        <input type="text" id="depan" name="i_name" value="Budi"><br>
+        <label for="n_belakang">Nama belakang:</label><br>
+        <input type="text" id="n_belakang" name="i_belakang" value="Prawira"><br><br>
+        <input type="submit" value="Kirim"></input>
+        <input type="reset" value="Reset">
+    </form>
+    <p>
+        Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama 
+        "/action page.php".
+    </p>
+    <p>
+        1. saat mengisi data dan tombol reset di-klik maka value form input akan kembali menjadi 
+        Budi dan Prawira karena telah menjadi default value.
+        <br><br>
+        2. saat tombol kirim di-klik maka data yang telah diisi akan dikirim ke halaman /action_page.php, 
+        namun dikarenakan file action_page.php tidak ada maka akan ada pesan "Cannot get action_page.php".
+        <br><br>
+        3. saat diberikan atribut target dan diisi self akan menampilkan halaman yang sama seperti 
+        sebelumnya, namun jika _blank maka akan ditampilkan pada tab baru. 
+        <br><br>
+        4. saat menambahkan method get url berubah menjadi: http://127.0.0.1:5500/action_page.php?i_name=Budi& 
+        i_belakan=Prawira, sedangkan jika method post sama seperti sebelumnya, namun url menjadi tidak terisi 
+        oleh data dari form.
+    </p>
+
+</body>
+
+</html>
