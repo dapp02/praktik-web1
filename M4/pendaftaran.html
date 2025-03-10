@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dava Febri Wardana">
+        <meta name="nim" content="244311039">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Judul Website</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                </ul>
+                <p></p>
+            </nav>
+            <article>
+                <h1>Form Penjadwal Pertemuan</h1>
+            <form action="">
+                <fieldset>
+                    <legend>Informasi Pribadi</legend>
+                    <label for="nama">Nama</label>
+                    <input type="text" id="nama" name="nama" /><br />
+                    <label for="nomor">No. Telepon</label>
+                    <input type="nomor" id="nomor" name="nomor" pattern="\d{4}-\d{6}" placeholder="1234-567890" required/><br />
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" /><br />
+                    <label for="ttl">Tanggal Lahir:</label>
+                    <input type="date" id="ttl" name="ttl" min="1987-01-01" max="1993-01-01" />
+                </fieldset>
+                <fieldset>
+                    <legend>Permintaan Pertemuan</legend>
+                    <label for="tujuan">Tujuan Pertemuan</label>
+                    <input type="text" id="tujuan" name="tujuan" /><br /><br />
+                    <label for="kepentingan">Tingkat Kepentingan Pertemuan</label>
+                    <input type="range" id="kepentingan" name="kepentingan" min="1" max="10" /><br /><br />
+                    <label for="tanggal">Tanggal</label>
+                    <input type="date" id="tanggal" name="tanggal" /><br /><br />
+                    <label for="waktu">Waktu</label>
+                    <input type="time" id="waktu" name="waktu" /><br /><br />
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+                <p>Kode ini membuat formulir untuk penjadwalan pertemuan yang terdiri dari dua bagian utama. Bagian pertama,
+                     "Informasi Pribadi," mengumpulkan data seperti nama, nomor telepon (dengan format tertentu), email, dan 
+                     tanggal lahir (dengan batasan tahun). Bagian kedua, "Permintaan Pertemuan," mengumpulkan informasi mengenai 
+                     tujuan pertemuan, tingkat kepentingan (menggunakan slider rentang), serta tanggal dan waktu (dengan batasan jam). 
+                     Formulir ini memanfaatkan berbagai tipe input HTML5 seperti tel, email, date, range, dan time untuk memudahkan 
+                     pengguna dalam mengisi data. Terdapat juga tombol "Submit" untuk mengirimkan formulir tersebut.</p>
+            </article>
+        </section>
+        <footer>
+            <p><i>copyright@DavaFebriWardana_2443110392025</i></p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Halaman Beranda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Dava Febri Wardana">
+        <meta name="nim" content="244311039">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                background-color: #666;
+                padding: 30px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                background: #ccc;
+                padding: 20px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            article {
+                float: left;
+                padding: 20px;
+                width: 70%;
+                background-color: #f1f1f1;
+
+            }
+            section::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            footer {
+                background-color: #777;
+                padding: 10px;
+                text-align: center;
+                color: white;
+            }
+            @media (max-width: 600px) {
+                nav, article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Judul Website</h2>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gambar.html">Gambar</a></li>
+                    <li><a href="event.html">Event</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="svg.html">SVG</a></li>
+                    <li><a href="canvas.html">Canvas</a></li>
+                </ul>
+                <p></p>
+            </nav>
+            <article>
+                <h1>Canvas</h1>
+                <canvas
+                  id="canvas"
+                  width="400"
+                  height="400"
+                  style="background-color: #333"
+                ></canvas>
+
+                <p>Kode HTML ini menyajikan sebuah artikel berjudul "Canvas" yang berisi elemen <canvas> 
+                dengan ID "canvas". Elemen canvas ini memiliki lebar dan tinggi 400 piksel serta latar belakang 
+                berwarna abu-abu gelap. Canvas ini difungsikan sebagai area untuk menggambar grafik dan membuat 
+                animasi menggunakan JavaScript, yang terhubung melalui file "js/main.js". Dengan kata lain, kode 
+                ini menyiapkan area gambar interaktif di halaman web yang dikendalikan oleh JavaScript.</p>
+            </article>
+        </section>
+        <footer>
+            <p><i>copyright@DavaFebriWardana_2443110392025</i></p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
