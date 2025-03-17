@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Combinator Selector</title>
+        <style>
+            div p {
+                color:red;
+            }
+            div > p {
+                background-color:yellow;
+            }
+            div + p {
+                background-color:darkgray;
+            }
+            div ~ p{
+                color:cyan;
+            }  
+        </style>
+    </head>
+    <body>
+      <div>
+        <p>Digunakan untuk memilih semua elemen "p" yang berada di dalam elemen "div", lalu memberikan warna teks merah pada elemen tersebut.</p>
+        <p>Digunakan untuk memilih elemen "p" yang langsung menjadi anak dari elemen "div", kemudian memberikan latar belakang berwarna kuning pada elemen tersebut.</p>
+      </div>
+      <p>Digunakan untuk memilih elemen "p" yang berada tepat setelah elemen "div", lalu memberikan latar belakang berwarna abu-abu gelap. Namun, dalam contoh ini tidak berlaku karena "p" berada di dalam "div".</p>
+      <p>Digunakan untuk memilih semua elemen "p" yang menjadi saudara dari elemen "div" (berada pada level yang sama), lalu memberikan warna teks cyan. Namun, dalam contoh ini tidak berlaku karena tidak ada elemen "p" yang menjadi saudara dari "div".</p>
+    </body>
+</html>

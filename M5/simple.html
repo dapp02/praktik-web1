@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Belajar Simple Selektor</title>
+        <style>
+            p {
+                text-align: center;
+                color:aqua;
+                border: 2px rgba(73, 207, 156, 0.932);
+                padding: 10px;
+                margin: 10px;
+                background-color: rgba(9, 224, 20, 0.801)
+            }
+            #kalimat {
+                text-align: left;
+                color: red;
+            }
+            .center {
+                text-align: center;
+                color: chocolate;
+            }
+            p.tengah {
+                text-align: center;
+                color: darkmagenta;
+                display: block;
+                background-color: #777777;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Penggunaan CSS dangat membantu web desingner dalam menyusun halaman yang konsisten pada proyek pembuatan halaman web</p>
+        <p id="kalimat">  Dalam penulisan CSS denggan sederhana namun powerfull dalam design </p>
+        <p class="center"> CSS mempunyai sifat pewarisan secara default style anak akan mewarisi style dari parent kecuali anak mendiskripsikan stylenya sendiri</p>
+        <p class="tengah>">Ini adalah hasil selector dengan element p dengan class tengah</p>
+    </body>
+</html>
