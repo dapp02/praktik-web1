@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar grid</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-gap: 50px;
+        background-color: #2196f3;
+        grid-template-columns:  auto auto auto auto ;
+        padding: 10px;
+
+      }
+      .item1 {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        grid-column: 3/4;
+
+      }
+      .item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div>Kode ini menunjukkan penggunaan properti grid-column untuk mengontrol penempatan item dalam grid. Pada class item1, perubahan dari grid-column: 1/4 menjadi 3/4 mengubah perilaku item tersebut dari yang semula membentang 3 kolom (dari garis 1 sampai 4) menjadi hanya menempati 1 kolom (dari garis 3 sampai 4). Grid container tetap menggunakan 4 kolom fleksibel (auto auto auto auto) dengan jarak antar item 50px dan background biru (#2196F3). Perubahan ini membuat layout lebih compact karena item1 tidak lagi mendominasi space yang besar, melainkan hanya menempati posisi kolom ketiga saja, sementara item lainnya mengikuti alur grid normal dengan style seragam.</div>
+
+  </body>
+</html>

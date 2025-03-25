@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Belajar Flex Box</title>
+    <style>
+      .wadah_flex {
+        display: flex;
+        background: rgb(50, 184, 106);
+        flex-flow: row wrap ;
+        justify-content: space-between;
+      }
+      .wadah_flex > div {
+        background-color: #02fce7;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="wadah_flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+
+    </div>
+    <p>
+        Kesimpulan skenario 1 adalah : Dengan menambahkan display: flex pada container, ketiga div anak otomatis 
+        tersusun dalam satu baris. Meski tanpa padding atau margin, struktur dasar Flexbox 
+        tetap terlihat jelas dari susunan horizontalnya. Warna background container membantu 
+        memvisualisasikan area flex.
+    </p>
+    <p>
+        Kesimpulan skenario 2 adalah :Implementasi Flexbox dalam kode ini memberikan penyempurnaan visual dibanding versi sebelumnya 
+        dengan menambahkan styling khusus untuk item-item flex. Meskipun fungsi dasar Flexbox (penyusunan horizontal) 
+        tetap sama, penambahan margin, padding, ukuran font, dan warna yang kontras membuat struktur layout menjadi lebih jelas terlihat.
+    </p>
+    <p>
+        Kesimpulan skenario 3 adalah :Perbedaan utama terletak pada penerapan row-reverse yang membalik urutan tampilan item flex. 
+        Kode ini memperluas contoh sebelumnya dengan menambahkan lebih banyak elemen, menunjukkan kemampuan 
+        flexbox dalam mengelola banyak item sekaligus. Meskipun urutan elemen terbalik, semua properti styling 
+        seperti warna, spacing, dan ukuran font tetap bekerja dengan konsisten.
+    </p>
+    <p>
+        Kesimpulan skenario 4 adalah : Skenario ini memperkenalkan konsep wrapping terbalik pada flexbox. Dibandingkan skenario wrap normal sebelumnya, 
+        pendekatan ini menghasilkan susunan vertikal yang terbalik dimana baris baru akan muncul di atas baris sebelumnya.
+    </p>
+    <p>
+        Kesimpulan skenario 5 adalah : Skenario ini kembali ke konsep wrap dasar yang lebih natural dibanding versi wrap-reverse sebelumnya. Dengan flex-flow: row wrap, 
+        item-item akan mengalir secara alami dari kiri ke kanan, lalu membentuk baris baru di bawah ketika ruang horizontal tidak cukup.
+    </p>
+    <p>
+        Kesimpulan skenario 6 adalah : Skenario ini memperkenalkan teknik 
+        pengaturan spasi dengan space-between yang memberikan tampilan lebih 
+        profesional. Dibanding skenario wrap biasa sebelumnya, pendekatan 
+        ini secara otomatis mengatur distribusi item dengan spasi yang seragam, 
+        membuat layout terlihat 
+        lebih seimbang dan terorganisir.
+    </p>
+    
+  </body>
+</html>
