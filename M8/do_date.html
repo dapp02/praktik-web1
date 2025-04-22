@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jam Real-time</title>
+  <script>
+    function updateJam() {
+      var now = new Date();
+      var waktu = now.toLocaleString();
+      document.getElementById("jam").innerHTML = waktu;
+    }
+    setInterval(updateJam, 1000); 
+  </script>
+</head>
+<body>
+  <h1>Waktu Saat Ini</h1>
+  <p id="jam"></p>
+</body>
+</html>

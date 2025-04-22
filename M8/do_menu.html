@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #menu { display: none; background: #f0f0f0; padding: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Menu Dropdown</h1>
+  <button id="toggleMenu">Tampilkan Menu</button>
+  <div id="menu">
+    <ul>
+      <li>Beranda</li>
+      <li>Tentang</li>
+      <li>Kontak</li>
+    </ul>
+  </div>
+
+  <script>
+    $("#toggleMenu").click(function(){
+      $("#menu").slideToggle();
+    });
+  </script>
+</body>
+</html>

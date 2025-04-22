@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>mengakses objek password</title>
+</head>
+<body>
+  <form name="formtes" action="tesform.htm" method="post">
+    <pre>
+    password pengganti : <input type="password" name="password_1">
+    password sekali lagi: <input type="password" name="password_2">
+
+    <input type="button" name="tombolproses" value="Proses" onclick="cekPassword()">
+    </pre>
+  </form>
+
+  <script language="javascript">
+    function cekPassword() {
+      if (document.formtes.password_1.value != document.formtes.password_2.value)
+        alert("Dua password yang Anda masukkan tidak sama");
+      else
+        window.location.href = "tesform.htm";
+    }
+  </script>
+</body>
+</html>

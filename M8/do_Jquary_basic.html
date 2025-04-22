@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dialog jQuery</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    #dialog {
+      display: none;
+    }
+
+    #bukaDialog {
+      padding: 10px 20px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 16px;
+      background-color: #1f38ca;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <button id="bukaDialog">Buka Dialog</button>
+  <div id="dialog" title="Dialog Sederhana" style="display:none;">
+    <p>Halo, ini dialog dari jQuery UI!</p>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+      $("#bukaDialog").click(function(){
+        $("#dialog").dialog();
+      });
+    });
+  </script>
+</body>
+</html>

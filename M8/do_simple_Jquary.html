@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Sederhana</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<p id="pesan">Ini adalah kalimat yang bisa disembunyikan.</p>
+<button id="tombol">Sembunyikan kalimat</button>
+
+<script>
+  $(document).ready(function(){
+    $("#tombol").click(function(){
+      $("#pesan").hide();
+    });
+  });
+</script>
+
+</body>
+</html>
